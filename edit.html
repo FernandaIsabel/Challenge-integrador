@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+              <picture>
+                      <a href="./index.html">
+                              <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
+                      </a>
+              </picture>
+              <ul>
+                      <li>
+                          <a href="./pages/shop.html">SHOP</a>
+                      </li>
+                      <li>
+                          <a href="./pages/contact.html">CONTACTO</a>
+                      </li>
+                      <li>
+                          <a href=".pages/login.html">LOGIN</a>
+                      </li>
+                      <li>
+                          <a href="">
+                                   <img src="./img/icons/cart-icon.svg" alt="Icono de carrito">
+                          </a>
+                      </li>
+              </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>EDITAR ITEM</h1>
+           <div class="edit">
+               <form action="edit.html" method="get">
+                    <label for="categorias">Categoría: </label>
+                    <select name="cat" id="cat">
+                     <option value="mayor">Figuras</option>
+                    </select>
+                    <label for="licencia">Licencia: </label>
+                    <select name="licencia" id="licencia">
+                     <option value="licencia">Naruto shippuden</option>
+                    </select> <br> <br>
+
+                    <label for="product_name">Nombre del producto:</label> 
+                    <input type="text" name="product_name" id="product_name" placeholder="Kakashi Hatake Shippuden Saga"><br> <br>
+
+                    <textarea name="" id="" cols="60" rows="7" placeholder="Figura funco coleccionable de Kakashi Hatake de la saga Naruto Shippuden invocando chidori."></textarea> <br>
+                    
+                    <label for="sku">SKU: </label>
+                    <input type="sku" name="sku" id="sku" placeholder="NAR001012">
+                    <label for="precio">Precio: </label>
+                    <input type="precio" name="precio" id="precio" placeholder="$1799,00">
+                    <label for="stock">Stock: </label>
+                    <input type="stock" name="stock" id="stock" placeholder="10"> <br>
+
+                    <label for="descuento">Descuento: </label>
+                    <input type="descuento" name="descuento" id="descuento" placeholder="10%">
+                    <label for="cuotas">Cuotas: </label>
+                    <select name="cuotas" id="cuotas">
+                           <option value="cuotas">6 cuotas sin interés</option>
+                    </select> <br>
+
+                    <label for="imagenes">Imágenes: </label>
+                    <input type="file" accept="png, pdf, jpg">
+                    
+                    <div class="imagenes">
+                        <div class="imagen_con_pie">
+                            <img src="img/kakashi_hatake_front.jpg" alt="">
+                            <div class="pie_de_foto">Frente</div>
+                        </div>
+                        <div class="imagen_con_pie">
+                            <img src="img/kakashi_hatake_back.jpg" alt="">
+                        <div class="pie_de_foto">Dorso</div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Modificar producto">
+               </form>
+            </div>  
+
+    </form> <br>
+    </section>
+</body>
+<footer>
+    <section>
+         <nav>
+             <ul>
+                 <li>
+                      <a href="./pages/shop.html">SHOP</a>
+                 </li>
+                 <li>
+                      <a href="./pages/register.html">REGISTRARSE</a>
+                 </li>
+                 <li>
+                      <a href="./pages/login.html">LOGIN</a>
+                 </li>
+                 <li>
+                      <a href="./pages/contact.html">CONTACTO</a>
+                 </li>
+             </ul>
+             <picture>
+                      <img src="./img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+             </picture>
+        </nav>
+
+    </section>
+              <p>All right reserved 2023 - Funkoshop &copy;</p>
+</footer>
+</html>
