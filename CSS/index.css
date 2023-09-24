@@ -213,3 +213,11 @@ header {
     background-color: var(--primary-900);
     color: var(--light-font-solid);
 }
+
+/*COLLECTIONS*/
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
