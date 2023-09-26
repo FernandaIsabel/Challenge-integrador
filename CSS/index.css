@@ -221,6 +221,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    padding: var(--spacing-16) 0;
 }
 
 .collection:nth-child(2) .collection__cover {
@@ -269,6 +270,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-36);
+    margin: var(--spacing-68) auto;
 }
 
 .slider__title {
@@ -283,6 +285,21 @@ header {
 
 .card-item__cover {
     display: flex;
+    position: relative;
+}
+
+.card-item__tag {
+    font-size: var(--font-xsmall);
+    text-transform: uppercase;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-12);
+    position: absolute;
+    right: 0;
+}
+
+.card-item__cover img {
+    animation: fade .7s;
 }
 
 .card-item__img--back {
@@ -323,3 +340,27 @@ header {
     color: var(--secondary-solid);
     font-weight: 700;
 }
+
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68);
+}
+
+.footer__copy {
+    margin-top: var(--spacing-36);
+    text-align: center;
+}
+
+
+/*ANIMATIONS*/
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
