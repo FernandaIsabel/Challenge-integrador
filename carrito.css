@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+:root {
+   /*Typography*/
+   --base-font: 'Inter', sans-serif;
+   --alternative-font: 'Raleway', sans-serif;
+ }
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +11,17 @@
     
 }
 
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
+
 a{
     text-decoration: none;
+    font-size: var(--font-medium);
+    font-family: inherit;
+    color:blue;
     }
 
 header{
@@ -89,7 +104,7 @@ div h2{
 .funko_poke{
     display: inline-block;
     font-size: 12px;
-    padding-right: 50px;
+    padding-right: 40px;
     }
 
 div div{
@@ -110,7 +125,7 @@ input#tentacles{
 .cantidad{
     padding:0;
     margin: 0;
-    padding-left: 30px;
+    padding-left: 25px;
     display: inline-block;
     
     }   
@@ -120,7 +135,7 @@ input#tentacles{
     margin: 0;
     display: inline-block;
     font-size: 15px;
-    padding-left: 50px;
+    padding-left: 33px;
     }
     
     
@@ -139,13 +154,14 @@ span{
 div h1{
     text-align: end;
     padding-right: 40px;
-    padding-top: 20px;
+    padding-top: 30px;
     text-decoration: underline red solid;
     }
     
 .resumen{
     display: block;
     text-align: end;
+    
     }
 
 .cant{
@@ -156,26 +172,27 @@ div h1{
     
 .SUBTOTAL{
     display:inline-block;
-    padding-right: 40px;
-    padding-left: 65px;
+    padding-right: 39px;
+    padding-left: 40px;
     }
     
 .envio{
     display: inline-block;
     padding-right: 40px;
-    padding-left: 118px;
+    padding-left: 75px;
     }
     
 .totaldos{
     display: inline-block;
-    padding-right: 40px;
-    padding-left: 95px;
+    padding-right: 37px;
+    padding-left: 65px;
     text-decoration: overline red solid;
     }
     
 .pagar{
     text-align: end;
-    padding-right: 140px;
+    padding-right: 90px;
+    padding-bottom: 75px;
     }  
 
 footer{ 
@@ -183,20 +200,22 @@ footer{
     padding-left: 15px;
     flex-direction: column;
     background-color: rgb(27, 27, 33);
+    
     }
     
 .footer_footer{
     text-align: start;
     display: inline-block;
+
     }
 
 .footeruno{
-    padding-bottom: 35px;
+    padding-bottom: 10px;
 }    
     
 .footer_img{
-    padding-left: 140px;
-    padding-top: 40px;
+    padding-left: 180px;
+    padding-top: 50px;
     display: inline-block;
 }
 footer div:nth-child(2){
@@ -311,7 +330,7 @@ div .funko{
     text-align: start;
     display: inline-block;
     font-size: 35px;
-    padding-right: 165px;
+    padding-right: 115px;
 }
 
 div div{
@@ -320,16 +339,16 @@ div div{
 }
 
 input#tentacles{
-    padding-top: 2px;
-    width: 50px;
-    height: 40px;
+    padding: 0px;
+    width: 45px;
+    height: 35px;
     display: inline-block;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 
 .cantidad{
-    padding-left: 265px;
+    padding-left: 320px;
     display: inline-block;
     
 
@@ -345,9 +364,9 @@ input#tentacles{
 
 div svg{
     display: inline-block;
-    width: 175px;
-    height: 60px;
-    padding-left: 50px;
+    width: 115px;
+    height: 55px;
+    padding-left: 10px;
 }
 
 
@@ -374,7 +393,7 @@ div h1{
 
 .cant{
     display: inline-block;
-    padding-right: 40px;
+    padding-right: 50px;
     
 }
 
@@ -385,19 +404,19 @@ div span{
 
 .SUBTOTAL{
     display:inline-block;
-    padding-right: 40px;
+    padding-right: 41px;
     padding-left: 130px;
 }
 
 .envio{
     display: inline-block;
-    padding-right: 40px;
+    padding-right: 44px;
     padding-left: 238px;
 }
 
 .totaldos{
     display: inline-block;
-    padding-left: 545px;
+    padding-left: 550px;
     text-decoration:overline red solid;
 }
 
@@ -405,6 +424,7 @@ div span{
     text-align: end;
     padding-right: 755px;
     padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 footer{ 
@@ -432,5 +452,3 @@ footer{
 }
 
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
