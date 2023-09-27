@@ -4,148 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>carrito</title>
+    <link rel="stylesheet" href="./carrito.css">
 </head>
 <body>
-    <header>
-      <picture>
-              <a href="./index.html">
-                 <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"> 
-              </a>
-     </picture>
-        <nav>  
-          <ul>
-            <li> 
-              <a href="./shop.html">SHOP</a>
-            </li>
-            <li>
-              <a href="./contact.html">CONTACTO</a>
-            </li>
-            <li>
-              <a href="./login.html">LOGIN</a>
-            </li>
-            <li>
-               <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 16 16" fill="#000000" class="bi bi-cart-check-fill" >
-                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
-              </svg>
-            </li>
-          </ul>
-        </nav>  
-       </header> 
-
+  <header class="navbar">
+    <picture class="navbar">
+          <a href="./index.html">
+             <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"> 
+          </a>
+    </picture>
+    <nav>
+      <ul class="navbar__menu">
+        <li> 
+          <a class="navbar with-icon" href="./shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+        <li>
+          <a class="navbar" href="./contact.html">CONTACTO</a>
+        </li>
+        <li>
+          <a class="navbar" href="./login.html">LOGIN</a>
+        </li>
+        <li>
+          <a class="navbar" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 16 16" fill="#000000" class="bi bi-cart-check-fill" >
+              <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>  
+  </header> 
+    
    <main>
-       <header>
-           <div class="PRODUCTO">
+       <article>
+           <div>
              <h2>CARRITO DE COMPRAS</h2>
            </div>
-           <div class="detalle del PRODUCTO">
-             <h3>DETALLE DEL PRODUCTO</h3>
-           </div>
-           <div class="CANTIDAD">
-             <h3>CANTIDAD</h3>
+           <div class="Producto">
+             <h3 class="carrito">DETALLE DEL PRODUCTO</h3>
+             <h3 class="carrito">CANTIDAD</h3>
+             <h3 class="carrito">TOTAL</h3>
            </div> 
-           <div class="TOTAL">
-             <h3>TOTAL</h3>
-           </div> 
+          
 
-
-           <div class="Funko yoda">
-             <figure>
+          <div class="Funko">
+              <figure class="funko">
                 <img src="img/star-wars/baby-yoda-1.webp" width="100px" height="100px" alt="Figura coleccionable Funko de Grogu de la serie The Mandalorian">
-             </figure>
-           </div>
-           <div class="descripcion del producto">
-            <a class="funko de yoda" >
-                <span data-component="nombre del funko">BABY YODA BLUEBALL</span>
-                <small data-component="descripcion y precio">(STAR WARS)</small>
-                <h4 data-component="precio">Precio= $1799,99</h4>
-            </a>
-           </div>
-                
-           <div class="funko pokemon">
+              </figure>
+              
+              <ul class="funko_yoda">
+                <li>
+                  <h4 class="funko">BABY YODA BLUEBALL</h4>
+                </li>
+                <li>
+                  <small class="funko">STAR WARS</small>
+                </li>
+                <li>
+                  <span class="funko">Precio= $1799,99</span>
+                </li>
+              </ul>
 
-              <figure>
+              <div class="cantidad">
+                <label for="tentacles"></label>
+                <input type="number" id="tentacles" name="tentacles" min="2" max="5" placeholder="2"> 
+              </div>
+
+              <div>
+                <span class="total">$3599,98</span>
+              </div>
+
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 91 91" height="50px" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="91px" xml:space="preserve"><g><path d="M67.305,36.442v-8.055c0-0.939-0.762-1.701-1.7-1.701H54.342v-5.524c0-0.938-0.761-1.7-1.699-1.7h-12.75   c-0.939,0-1.701,0.762-1.701,1.7v5.524H26.93c-0.939,0-1.7,0.762-1.7,1.701v8.055c0,0.938,0.761,1.699,1.7,1.699h0.488v34.021   c0,0.938,0.761,1.7,1.699,1.7h29.481c3.595,0,6.52-2.924,6.52-6.518V38.142h0.486C66.543,38.142,67.305,37.381,67.305,36.442z    M41.592,22.862h9.35v3.824h-9.35V22.862z M61.719,67.345c0,1.719-1.4,3.117-3.12,3.117h-27.78v-32.32l30.9,0.002V67.345z    M63.904,34.742H28.629v-4.655h11.264h12.75h11.262V34.742z"/><rect height="19.975" width="3.4" x="36.066" y="44.962"/><rect height="19.975" width="3.4" x="44.566" y="44.962"/><rect height="19.975" width="3.4" x="53.066" y="44.962"/></g></svg> 
+
+          </div>
+                
+          <div class="funko">
+              <figure class="funko">
                 <img src="./img/pokemon/pidgeotto-1.webp" width="100px" height="100px"   alt="Figura coleccionable Funko de Pidgeotto">
               </figure>
-           </div> 
-           <Div class="Descripcion del producto">
-            <a class="Poke funko"">
-               <span data-component="Nombre del producto">PIDGEOTTO</span>
-               <small data-component="descripcion del produco">(POKEMON)</small>
-               <h4 data-component="Precio">Precio= $1799,99</h4>
-            </a>
+              <ul class="funko_poke">
+                <li><h4 class="funko">PIDGEOTTO</h4></li>
+                <li><small class="funko">POKEMON</small></li>
+                <li><span class="funko">Precio= $1799,99</span></li>
+              </ul> 
+
+            <div class="cantidad">
+                <label for="tentacles"></label>
+                <input type="number" id="tentacles" name="tentacles" min="1" max="5" placeholder="1"> 
+            </div>
+
+            <div>
+              <span class="total">$1799,99</span>  
+            </div>
+
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 91 91" height="50px" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="91px" xml:space="preserve"><g><path d="M67.305,36.442v-8.055c0-0.939-0.762-1.701-1.7-1.701H54.342v-5.524c0-0.938-0.761-1.7-1.699-1.7h-12.75   c-0.939,0-1.701,0.762-1.701,1.7v5.524H26.93c-0.939,0-1.7,0.762-1.7,1.701v8.055c0,0.938,0.761,1.699,1.7,1.699h0.488v34.021   c0,0.938,0.761,1.7,1.699,1.7h29.481c3.595,0,6.52-2.924,6.52-6.518V38.142h0.486C66.543,38.142,67.305,37.381,67.305,36.442z    M41.592,22.862h9.35v3.824h-9.35V22.862z M61.719,67.345c0,1.719-1.4,3.117-3.12,3.117h-27.78v-32.32l30.9,0.002V67.345z    M63.904,34.742H28.629v-4.655h11.264h12.75h11.262V34.742z"/><rect height="19.975" width="3.4" x="36.066" y="44.962"/><rect height="19.975" width="3.4" x="44.566" y="44.962"/><rect height="19.975" width="3.4" x="53.066" y="44.962"/></g></svg>   
+           </div>
+
           </Div>
-          
-          <div class="Cantidad del produco">
-            <label for="tentacles"></label>
-            <input type="number" id="tentacles" name="tentacles" min="2" max="5" placeholder="2">  
-          </div>
-
-
-          <div class="Cantidad del produco">
-            <label for="tentacles"></label>
-            <input type="number" id="tentacles" name="tentacles" min="1" max="5" placeholder="1">
-          </div>
            
+        <div class="resumen">
+          <h1>RESUMEN</h1>
+            <ul class="cant">
+              <li><span>CANTIDAD DE ELEMENTOS</span></li>
+            </ul>
+            <ul class="cant">
+              <li><span>3</span></li>
+            </ul>
+        </div>
+        <div class="resumen">
+            <ul class="SUBTOTAL">
+              <li><span>SUBTOTAL</span></li>
+            </ul>
+            <ul class="SUBTOTAL">
+              <li><span>$ 5399,97</span></li>
+            </ul>  
+        </div>   
+        <div class="resumen">
+            <ul class="envio">
+              <li><span>ENVIO</span></li>
+            </ul>
+            <ul class="envio">
+              <li><span>$ 0,00</span></li>
+            </ul>  
+        </div>    
         
-          <div class="precio total">
-               <dl>
-                  <dt>$3599,98</dt>
-               </dl>
-          </div>
-           
-          <div class="precio total">
-            <dl>
-               <dt>$1799,99</dt>
-            </dl>
-          </div>
-
-         <div>
-                <h1>RESUMEN</h1>
-                <span>CANTIDAD DE ELEMENTOS</span> 
-                <span>3</span> <br> 
-                <span>SUBTOTAL</span> 
-                <span>$ 5399,97</span> <br>
-                <span>ENVIO</span>
-                <span>$ 0,00</span> 
-         </div>
-
-         <div>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 91 91" height="50px" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="91px" xml:space="preserve"><g><path d="M67.305,36.442v-8.055c0-0.939-0.762-1.701-1.7-1.701H54.342v-5.524c0-0.938-0.761-1.7-1.699-1.7h-12.75   c-0.939,0-1.701,0.762-1.701,1.7v5.524H26.93c-0.939,0-1.7,0.762-1.7,1.701v8.055c0,0.938,0.761,1.699,1.7,1.699h0.488v34.021   c0,0.938,0.761,1.7,1.699,1.7h29.481c3.595,0,6.52-2.924,6.52-6.518V38.142h0.486C66.543,38.142,67.305,37.381,67.305,36.442z    M41.592,22.862h9.35v3.824h-9.35V22.862z M61.719,67.345c0,1.719-1.4,3.117-3.12,3.117h-27.78v-32.32l30.9,0.002V67.345z    M63.904,34.742H28.629v-4.655h11.264h12.75h11.262V34.742z"/><rect height="19.975" width="3.4" x="36.066" y="44.962"/><rect height="19.975" width="3.4" x="44.566" y="44.962"/><rect height="19.975" width="3.4" x="53.066" y="44.962"/></g></svg>   
-         </div>
-         <div>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 91 91" height="50px" id="Layer_1" version="1.1" viewBox="0 0 91 91" width="91px" xml:space="preserve"><g><path d="M67.305,36.442v-8.055c0-0.939-0.762-1.701-1.7-1.701H54.342v-5.524c0-0.938-0.761-1.7-1.699-1.7h-12.75   c-0.939,0-1.701,0.762-1.701,1.7v5.524H26.93c-0.939,0-1.7,0.762-1.7,1.701v8.055c0,0.938,0.761,1.699,1.7,1.699h0.488v34.021   c0,0.938,0.761,1.7,1.699,1.7h29.481c3.595,0,6.52-2.924,6.52-6.518V38.142h0.486C66.543,38.142,67.305,37.381,67.305,36.442z    M41.592,22.862h9.35v3.824h-9.35V22.862z M61.719,67.345c0,1.719-1.4,3.117-3.12,3.117h-27.78v-32.32l30.9,0.002V67.345z    M63.904,34.742H28.629v-4.655h11.264h12.75h11.262V34.742z"/><rect height="19.975" width="3.4" x="36.066" y="44.962"/><rect height="19.975" width="3.4" x="44.566" y="44.962"/><rect height="19.975" width="3.4" x="53.066" y="44.962"/></g></svg>   
-         </div>
-
+        <div class="resumen">
+          <ul class="totaldos">
+            <li><h4>TOTAL</h4></li>
+          </ul>
+          <ul class="totaldos">
+            <li><span>$5399,97</span></li>
+          </ul>
+        </div>
+        
          <section class="pagar">
             <form action="pago" method="post"></form> 
             <button type="submit">IR A PAGAR</button>
          </section>
-        </header>  
+        </article>
     </main>
 
     <footer>
-        <section>
-        <nav>
-          <ul>
-            <li>
-              <a href="./shop.html">SHOP</a>
-            </li>
-            <li>
-              <a href="./registro.html">REGISTRARSE</a>
-            </li>
-            <li>
-              <a href="./login.html">LOGIN</a>
-            </li>
-            <li>
-              <a href="./contact.html">CONTACTO</a>
-            </li>
+        <div class="footeruno">
+          <ul class="footer_footer">
+            <li><a href="./pages/shop.html">SHOP</a></li>
+            <li><a href="./pages/register.html">REGISTRARSE</a></li>
+            <li><a href="./pages/login.html">LOGIN</a></li>
+            <li><a href="./pages/contact.html">CONTACTO</a></li>
           </ul>
-          <picture>
+          <picture class="footer_img">
             <img src="./img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
           </picture>
-        </nav>
-        
-        </section>
+        </div>
         <p>All right reserved 2023 - Funkoshop &copy;</p>
         </footer> 
 </body>
