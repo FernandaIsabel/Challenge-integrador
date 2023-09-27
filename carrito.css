@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+    }
+
+header{
+    max-width:100%;
+    font-size:15px;
+    background-color: rgb(43, 43, 53);
+    align-items: start;
+    padding: 10px;
+    }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    }
+    
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 9px; 
+    padding-right: 3px;
+    }
+
+ul{
+    list-style: none; 
+    }
+    
+nav li{
+    text-align: center; 
+    }
+
+nav svg{
+    max-width: 15px;
+    }
+
+header img {
+    max-width: 80%;
+    margin: 0;  
+    padding: 1px 2px;
+    }
+
+
+       
+main article{
+    grid-template-columns: 1fr;
+            
+    }
+
+
+div h2{
+    font-size:20px;
+    padding-left: 30px;
+    padding-top: 10px;
+    text-decoration: underline red solid;
+    }
+
+.Producto{
+    display: flex;
+    align-items:center;
+    padding: 0;
+        
+    }
+
+.carrito {
+    font-size: 15px;
+    margin: 5px;
+    padding-left: 15px;   
+    }
+
+.funko_yoda{
+    display:inline-block;
+    font-size: 12px;
+    }
+
+.funko{
+    padding-left: 0;
+    display: inline-block; 
+    }
+    
+.funko_poke{
+    display: inline-block;
+    font-size: 12px;
+    padding-right: 50px;
+    }
+
+div div{
+    display:inline-block;
+        
+    }
+    
+    
+input#tentacles{
+    padding-top: 2px;
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    font-size: 10px;
+    text-align: center;
+    }
+    
+.cantidad{
+    padding:0;
+    margin: 0;
+    padding-left: 30px;
+    display: inline-block;
+    
+    }   
+    
+.total{
+    padding:0;
+    margin: 0;
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 50px;
+    }
+    
+    
+div svg{
+    display: inline-block;
+    padding:8px;
+    margin: 0;
+    }
+
+
+span{
+    text-align: end;
+    }
+    
+    
+div h1{
+    text-align: end;
+    padding-right: 40px;
+    padding-top: 20px;
+    text-decoration: underline red solid;
+    }
+    
+.resumen{
+    display: block;
+    text-align: end;
+    }
+
+.cant{
+    display: inline-block;
+    padding-right: 40px;
+        
+    }
+    
+.SUBTOTAL{
+    display:inline-block;
+    padding-right: 40px;
+    padding-left: 65px;
+    }
+    
+.envio{
+    display: inline-block;
+    padding-right: 40px;
+    padding-left: 118px;
+    }
+    
+.totaldos{
+    display: inline-block;
+    padding-right: 40px;
+    padding-left: 95px;
+    text-decoration: overline red solid;
+    }
+    
+.pagar{
+    text-align: end;
+    padding-right: 140px;
+    }  
+
+footer{ 
+    display: block;
+    padding-left: 15px;
+    flex-direction: column;
+    background-color: rgb(27, 27, 33);
+    }
+    
+.footer_footer{
+    text-align: start;
+    display: inline-block;
+    }
+
+.footeruno{
+    padding-bottom: 35px;
+}    
+    
+.footer_img{
+    padding-left: 140px;
+    padding-top: 40px;
+    display: inline-block;
+}
+footer div:nth-child(2){
+    align-self: center;
+    }
+
+@media screen and (min-width:1920px){
+
+*{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    max-width:100%;
+    background-color: rgb(43, 43, 53); 
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header img {
+    max-width: 100%;
+    padding: 30px 100px; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding-right:60px;   
+}
+
+nav svg{
+    max-width: 35px;
+    }
+
+
+ul{
+    list-style: none; 
+}
+
+nav li{
+    text-align: center;    
+}
+
+
+main{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+main article{
+    margin-bottom: 1em;
+    border-radius: 5px;  
+}
+
+div h2 {
+    text-decoration:underline red solid;
+    font-size: 35px;
+    padding-left: 500px;
+    padding-top: 30px;
+}
+
+
+.Producto{
+   display: flex;
+   align-items:center;  
+}
+
+.carrito{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin: 10px;
+    padding-left: 500px;
+}
+
+div figure img{
+    width: 650px;
+    height: 190px;
+    padding-left: 450px;
+    
+
+}
+
+.funko_yoda{
+    text-align: start;
+    display: inline-block;
+    font-size: 35px;
+    padding: 5px;
+}
+
+div .funko{
+    padding: 0;
+    display: inline-block; 
+}
+
+.funko_poke{
+    text-align: start;
+    display: inline-block;
+    font-size: 35px;
+    padding-right: 165px;
+}
+
+div div{
+    display:inline-block;
+    
+}
+
+input#tentacles{
+    padding-top: 2px;
+    width: 50px;
+    height: 40px;
+    display: inline-block;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cantidad{
+    padding-left: 265px;
+    display: inline-block;
+    
+
+}
+
+.total{
+    padding-left:550px;
+    display: inline-block;
+    font-size: 25px;
+    
+}
+
+
+div svg{
+    display: inline-block;
+    width: 175px;
+    height: 60px;
+    padding-left: 50px;
+}
+
+
+
+div ul{
+    text-align: end;
+    padding-right: 50px;
+}
+
+div h1{
+    text-align: end;
+    font-size: 35px;
+    padding-right: 390px;
+    padding-top: 60px;
+    text-decoration: underline red solid;
+}
+
+.resumen{
+    display: block;
+    text-align: end;
+    font-size: 30px;
+}
+
+
+.cant{
+    display: inline-block;
+    padding-right: 40px;
+    
+}
+
+div span{
+    display: inline-block;
+    padding-right: 350px;
+}
+
+.SUBTOTAL{
+    display:inline-block;
+    padding-right: 40px;
+    padding-left: 130px;
+}
+
+.envio{
+    display: inline-block;
+    padding-right: 40px;
+    padding-left: 238px;
+}
+
+.totaldos{
+    display: inline-block;
+    padding-left: 545px;
+    text-decoration:overline red solid;
+}
+
+.pagar{
+    text-align: end;
+    padding-right: 755px;
+    padding-top: 20px;
+}
+
+footer{ 
+    display: block;
+    flex-direction: column;
+    padding-left: 145px;
+    background-color: rgb(27, 27, 33);
+}
+
+.footer_footer{
+    text-align: start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.footer_img{
+    max-width: 100%;
+    padding-left: 1950px;
+    padding-top: 20px;
+    padding-bottom:20px ;
+    display: inline-block
+
+}
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
