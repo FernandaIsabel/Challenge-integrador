@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./registro.css">
 </head>
 <body>
-    <header>
-        <nav>
-          <picture>
-              <a href="./index.html">FUNKOSHOP<img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
-          </picture>
-          <ul>
+    <header class="navbar">
+        <picture class="navbar">
+           <a href="./index.html"><img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
+        </picture>
+          <nav>
+          <ul class="navbarmenu">
             <li> 
-              <a href="./shop.html">VER TIENDA</a>
+              <a class="navbar" href="./shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-ico></a>
             </li>
             <li>
-              <a href="./admin.html">ADMIN</a>
+              <a class="navbar" href="./admin.html">ADMIN</a>
             </li>
             <li>
-              <a href="./salir.html">SALIR</a>
+              <a class="navbar" href="./salir.html">SALIR</a>
             </li>
-    
           </ul>
         </nav>  
        </header> 
@@ -30,24 +30,24 @@
            <h2>CREA TU CUENTA</h2>
            <h3>Completa el formulario para ser parte del mundo de los funkos</h3>
             <form action="Register.html"></form>
-            <label for="name">Nombre</label>
-            <input type="text" name="nombre" id="name">
+            <label for="name">Nombre:</label>
+            <input type="text" name="nombre" id="name" placeholder="Juan               ">
 
             <form action="Register.html"></form>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Perez             " required>
             
             <form action="Register.html" method="post"></form>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="...@gmail.com" required="@gmail.com">
 
             <form action="Register.html"></form>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="***************" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="Password" placeholder="*****************" required>
 
             <form action="Register.html"></form>
-            <label for="repit password">Repetir Password</label>
-            <input type="repit password" name="repit" id="repit password" placeholder="***************" required>
+            <label for="repita password">Repetir Password:</label>
+            <input type="repita password" name="repit" id="Repita password" placeholder="*****************" required>
 
             <form action="Register.html" method="post"></form>
              <button>REGISTRARSE</button> 
@@ -57,28 +57,25 @@
        </div>
 
     <footer>
-        <section>
-        <nav>
-          <ul>
+        <div class="footeruno">
+          <ul class="footer_footer">
             <li>
-              <a href="./shop.html">SHOP</a>
+              <a class="footeruno" href="./shop.html">SHOP</a>
             </li>
             <li>
-              <a href="./registro.html">REGISTRARSE</a>
+              <a class="footeruno" href="./registro.html">REGISTRARSE</a>
             </li>
             <li>
-              <a href="./login.html">LOGIN</a>
+              <a class="footeruno" href="./login.html">LOGIN</a>
             </li>
             <li>
-              <a href="./contact.html">CONTACTO</a>
+              <a class="footeruno" href="./contact.html">CONTACTO</a>
             </li>
           </ul>
-          <picture>
+          <picture class="footeruno">
             <img src="./img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
           </picture>
-        </nav>
-        
-        </section>
+        </div>
         <p>All right reserved 2023 - Funkoshop &copy;</p>
         </footer> 
 </body>
