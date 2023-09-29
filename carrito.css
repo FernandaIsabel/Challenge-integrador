@@ -74,7 +74,7 @@ main article{
 div h2{
     font-size:20px;
     padding-left: 30px;
-    padding-top: 10px;
+    padding-top: 40px;
     text-decoration: underline red solid;
     }
 
@@ -193,8 +193,17 @@ div h1{
     text-align: end;
     padding-right: 90px;
     padding-bottom: 75px;
-    }  
+} 
 
+button {
+	display: inline-block;
+	background-color: #d70b04;
+	padding:8px;
+	border:0;
+	font-size: 1em; 
+	color: 	white;
+    
+}
 footer{ 
     display: block;
     padding-left: 15px;
@@ -210,14 +219,17 @@ footer{
     }
 
 .footeruno{
-    padding-bottom: 10px;
+    display: flex;
+    padding: 5px 160px 0px 5px;
+    max-width: 50%;
 }    
     
-.footer_img{
-    padding-left: 180px;
-    padding-top: 50px;
-    display: inline-block;
+footer p{
+    text-align: center;
+    color: white;
+    padding-top: 12px;
 }
+
 footer div:nth-child(2){
     align-self: center;
     }
