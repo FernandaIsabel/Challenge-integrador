@@ -234,7 +234,7 @@ footer div:nth-child(2){
     align-self: center;
     }
 
-@media screen and (min-width:1920px){
+@media screen and (min-width:1832px){
 
 *{
     max-width: 100%;
@@ -257,7 +257,7 @@ a{
 
 header img {
     max-width: 100%;
-    padding: 30px 100px; 
+    padding: 20px 80px; 
 }
 
 .navbar {
@@ -271,7 +271,7 @@ header img {
     display: flex;
     align-items: center;
     gap: 2em;
-    padding-right:60px;   
+    padding-right:80px;   
 }
 
 nav svg{
@@ -301,8 +301,8 @@ main article{
 div h2 {
     text-decoration:underline red solid;
     font-size: 35px;
-    padding-left: 500px;
-    padding-top: 30px;
+    padding-left: 300px;
+    padding-top: 25px;
 }
 
 
@@ -314,15 +314,15 @@ div h2 {
 .carrito{
     display: flex;
     align-items: center;
-    font-size: 25px;
-    margin: 10px;
-    padding-left: 500px;
+    font-size: 20px;
+    margin: 25px;
+    padding-left: 300px;
 }
 
 div figure img{
-    width: 650px;
-    height: 190px;
-    padding-left: 450px;
+    width: 450px;
+    height: 160px;
+    padding-left: 300px;
     
 
 }
@@ -330,7 +330,7 @@ div figure img{
 .funko_yoda{
     text-align: start;
     display: inline-block;
-    font-size: 35px;
+    font-size: 25px;
     padding: 5px;
 }
 
@@ -342,8 +342,8 @@ div .funko{
 .funko_poke{
     text-align: start;
     display: inline-block;
-    font-size: 35px;
-    padding-right: 115px;
+    font-size: 25px;
+    padding-right: 90px;
 }
 
 div div{
@@ -361,24 +361,24 @@ input#tentacles{
 }
 
 .cantidad{
-    padding-left: 320px;
+    padding-left: 200px;
     display: inline-block;
     
 
 }
 
 .total{
-    padding-left:550px;
+    padding-left:375px;
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     
 }
 
 
 div svg{
     display: inline-block;
-    width: 115px;
-    height: 55px;
+    width: 100px;
+    height: 50px;
     padding-left: 10px;
 }
 
@@ -391,78 +391,78 @@ div ul{
 
 div h1{
     text-align: end;
-    font-size: 35px;
-    padding-right: 390px;
-    padding-top: 60px;
+    font-size: 25px;
+    padding-right: 300px;
+    padding-top: 25px;
     text-decoration: underline red solid;
 }
 
 .resumen{
     display: block;
     text-align: end;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
 .cant{
     display: inline-block;
-    padding-right: 50px;
+    padding-right: 40px;
     
 }
 
 div span{
     display: inline-block;
-    padding-right: 350px;
+    padding-right: 265px;
 }
 
 .SUBTOTAL{
     display:inline-block;
-    padding-right: 41px;
-    padding-left: 130px;
+    padding-right: 40px;
+    padding-left: 75px;
 }
 
 .envio{
     display: inline-block;
-    padding-right: 44px;
-    padding-left: 238px;
+    padding-right: 40px;
+    padding-left: 152px;
 }
 
 .totaldos{
     display: inline-block;
-    padding-left: 550px;
+    padding-left: 392px;
     text-decoration:overline red solid;
 }
 
 .pagar{
     text-align: end;
-    padding-right: 755px;
+    padding-right: 555px;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 2px;
 }
 
 button{
-    padding: 15px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 15px;
 }
 
 footer{ 
     display: block;
     flex-direction: column;
-    padding-left: 500px;
-    padding-right: 500px;
+    padding-left: 200px;
+    padding-right: 200px;
     background-color: rgb(27, 27, 33);
 }
 
 .footer_footer{
     text-align: start;
-    padding: 10px 810px 9px 0px;
+    padding: 10px 515px 9px 0px;
     display: inline-block;
     font-size: 20px;
 }
 
 .footeruno{
     display: flex;
-    padding: 5px 100px 0px 65px;
+    padding: 5px 115px 0px 95px;
     max-width: 100%;
 } 
 
