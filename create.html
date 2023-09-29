@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./create.css">
 </head>
 <body>
-    <header>
+    <header class="navbar">
+      <picture class="navbar">
+        <a href="./index.html"><img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
+      </picture>
         <nav>
-          <picture>
-              <a href="./index.html">FUNKOSHOP<img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"></a>
-          </picture>
-          <ul>
+          <ul class="navbarmenu">
             <li> 
-              <a href="./shop.html">VER TIENDA</a>
+              <a class="navbar" href="./shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-ico></a>
             </li>
             <li>
-              <a href="./admin.html">ADMIN</a>
+              <a class="navbar" href="./admin.html">ADMIN</a>
             </li>
             <li>
-              <a href="./salir.html">SALIR</a>
+              <a class="navbar" href="./salir.html">SALIR</a>
             </li>
-    
           </ul>
         </nav>  
        </header> 
@@ -31,41 +31,40 @@
             <h2>CREA NUEVO ITEM</h2>
 
             <form action="create.html"></form>
-            <label for="categoria">Categoria</label>
+            <label for="categoria">Categoria:</label>
             <select name="categoria" id="categoria">
-                <option value="seleccionar">Seleccionar</option>
+                <option value="seleccionar">Seleccionar:</option>
                 <option value="star-wars">star-wars</option> 
                 <option value="Pokemon">Pokemon</option>
                 <option value="harry-potter">harry-potter</option>
             </select> 
-            <label for="Licencia">Licencia</label>
+            <label for="Licencia">Licencia:</label>
              <select name="Licencia" id="Licencia" >
                 <option value="Seleccionar">Seleccionar</option>
              </select>
 
              <form action="create.html"></form>
-             <label for="nombre del producto">Nombre del Producto</label>
-             <input type="text" name="name" id="nombre del producto">
+             <label for="producto">Nombre del Producto:</label>
+             <input type="text" name="name" id="producto" placeholder="Kakashi Hatake Shippuden Saga  ">
 
              <form action="create.html"></form>
-             <label for="descripcion">Descripción del Producto</label>
-             <textarea></textarea>
+             <label for="descripcion">Descripción del Producto:</label> <br>
+             <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+             <form action="create.html"></form>
+             <label for="Sku">SKU:</label>
+             <input type="text" name="Sku" id="Sku" placeholder="SSK111AB001" required>
+
+             <label for="Precio">Precio:</label>
+             <input type="number" name="Precio" id="Precio" placeholder="$0.000,00" required>
+
+             <label for="Stock">Stock:</label>
+             <input type="number" name="Stock" id="Stock" placeholder="0   " required>
 
              <form action="create.html"></form>
-             <label for="Sku">SKU</label>
-             <input type="text" name="SKU" id="Sku" placeholder="SSK111AB001" required>
-
-             <label for="Precio">Precio</label>
-             <input type="number" name="precio" id="precio" placeholder="$0.000,00" required>
-
-             <label for="Stock">Stock</label>
-             <input type="number" name="stock" id="stock" placeholder="0" required>
-
-             <form action="create.html"></form>
-             <label for="descuento">Descuento</label>
+             <label for="descuento">Descuento:</label>
              <input type="number" name="descuento" id="descuento" placeholder="0%" required="%">
 
-             <label for="cuotas">Cuotas</label>
+             <label for="cuotas">Cuotas:</label>
              <select name="cuotas" id="cuotas">
                     <option value="3 cuotas ">3 Cuotas sin interés</option>
                     <option value="6 cuotas">6 Cuotas sin interés</option>
@@ -74,40 +73,38 @@
              </select>
 
              <form action="create.html"></form>
-             <label for="imagen">Imágenes</label>
+             <label for="imagen">Imágenes:</label>
              <input type="file" name="imagen" id="imagen">
 
              <form action="create.html"></form>
              <label for="agregar producto" href="./carrito.html"></label>
              <button>Agregar Producto</button> 
-             <label for="limpiar"></label>
-             <input type="button" value="limpiar" reset>
+             <button>Limpiar</button>
 
        </div>
            
     <footer>
-        <section>
-        <nav>
-          <ul>
+        <div class="footeruno">
+          <ul class="footer_footer">
             <li>
-              <a href="./shop.html">SHOP</a>
+              <a class="footeruno" href="./shop.html">SHOP</a>
             </li>
             <li>
-              <a href="./registro.html">REGISTRARSE</a>
+              <a class="footeruno" href="./registro.html">REGISTRARSE</a>
             </li>
             <li>
-              <a href="./login.html">LOGIN</a>
+              <a class="footeruno" href="./login.html">LOGIN</a>
             </li>
             <li>
-              <a href="./pages/contact.html">CONTACTO</a>
+              <a class="footeruno" href="./pages/contact.html">CONTACTO</a>
             </li>
           </ul>
           <picture>
             <img src="./img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
           </picture>
-        </nav>
+        </div>
         
-        </section>
+        
         <p>All right reserved 2023 - Funkoshop &copy;</p>
     </footer> 
 
