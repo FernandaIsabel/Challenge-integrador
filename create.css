@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+:root {
+   /*Typography*/
+   --base-font: 'Inter', sans-serif;
+   --alternative-font: 'Raleway', sans-serif;
+ }
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
+
+a{
+    text-decoration: none;
+    font-size: var(--font-medium);
+    color:blue;
+}
+header{
+    max-width:100%;
+    font-size:10px;
+    background-color: rgb(43, 43, 53);
+    padding: 25px;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center; 
+    gap: 3px;  
+}
+    
+.navbarmenu{
+    display:flex;
+    align-items: center; 
+    padding-right: 5px; 
+    gap: 9px;
+}
+
+ul{
+    list-style: none; 
+}
+        
+nav li{
+    text-align: end; 
+}
+    
+header img {
+    max-width: 55%;
+    margin: 0;  
+    padding: 1px 2px;
+}
+
+main article{
+    grid-template-columns: 1fr;
+            
+}
+
+div{
+ padding-bottom: 55px;
+ padding-left: 20px;
+ padding-right: 10px;
+}
+
+div h2{
+    font-size: 20px;
+    padding-top: 35px;
+    padding-bottom: 38px;
+}
+
+label{
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+input{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    text-decoration:underline red solid;
+    
+}
+
+
+#producto{
+    border: white;
+    width: 210px;
+}
+
+#descripcion{
+    max-height: 100px;
+    width: 365px; 
+    
+}
+
+#Sku{
+    border: white;
+    width: 105px;
+}
+
+#Precio{
+    border: white;
+    width: 80px;
+}
+
+#Stock{
+    border: white;
+    width: 45px;
+}
+
+#descuento{
+    border: white;
+    width: 65px;
+}
+
+#imagen{
+    text-decoration: none;
+}
+
+button {
+	display: inline-block;
+	background-color: #d70b04;
+	padding:10px;
+	border:0;
+	font-size: 1em; 
+	color: 	white;
+}
+
+footer{ 
+    display: block;
+    padding-left: 17px;
+    flex-direction: column;
+    background-color: rgb(43, 43, 53);
+    
+    }
+    
+.footer_footer{
+    text-align: start;
+    display: inline-block;
+
+    }
+
+.footeruno{
+    display: flex;
+    padding: 5px 160px 0px 5px;
+    max-width: 50%;
+
+}    
+
+footer p{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+footer div:nth-child(2){
+    align-self: center;
+}
+
+
+@media screen and (min-width:1832px){
+
+*{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+            
+}
+        
+header {
+    max-width:100%;
+    background-color: rgb(43, 43, 53); 
+    font-size: 25px;
+    padding: 10px;
+}
+        
+a{
+    text-decoration: none;
+}
+        
+header img {
+    max-width: 100%;
+    padding: 15px 70px; 
+}
+        
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+            
+}
+        
+.navbarmenu {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding-right: 70px;
+          
+}
+    
+ul{
+    list-style: none; 
+}
+    
+nav li{
+    text-align: center;    
+}
+    
+main article{
+    margin-bottom: 1em;
+    border-radius: 5px;  
+}
+
+
+div{
+    padding-bottom: 20px;
+    padding-left: 550px;
+    padding-right: 100px;
+
+   }
+   
+div h2{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 13px;
+}
+   
+label{
+    font-size: 25px;
+    padding-left: 5px;
+}
+   
+input{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    text-decoration:underline red solid;    
+}
+#categoria{
+    width: 120px;
+    height: 30px;
+}   
+
+#Licencia{
+    width: 120px;
+    height: 30px;
+}
+   
+#producto{
+    border: white;
+    width: 750px;
+}
+   
+#descripcion{
+    max-height: 150px;
+    width: 765px;     
+}
+   
+#Sku{
+    border: white;
+    width: 205px;
+}
+   
+#Precio{
+    border: white;
+    width: 160px;
+}
+   
+#Stock{
+    border: white;
+    width: 50px;
+}
+   
+#descuento{
+    border: white;
+    width: 125px;
+}
+
+#cuotas{
+    width: 175px;
+    height: 30px;
+}
+   
+#imagen{
+    text-decoration: none;
+}
+   
+button {
+    display: inline-block;
+    background-color: #d70b04;
+    padding:10px;
+    border:0;
+    font-size: 1em; 
+    color: 	white;
+    font-size: 20px;
+}
+
+footer{ 
+    display: block;
+    flex-direction: column;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: rgb(43, 43, 53);
+}
+
+.footer_footer{
+    text-align: start;
+    padding: 15px 575px 15px 0px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.footeruno{
+    display: flex;
+    padding: 5px 175px 1.5px 100px;
+    max-width: 100%;
+} 
+
+footer p{
+    font-size: 20px;
+    text-align: center;
+}
+}
