@@ -4,54 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADMIN</title>
+    <link rel="stylesheet" href="CSS/admin.css">
 </head>
 <body>
     <header>
-        <nav>
-          <picture>
+        <nav class="navbar container">
+          <picture class="navbar__logo">
               <a href="./index.html">
                  <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop"> 
               </a>
           </picture>
-          <ul>
-            <li> 
-              <a href="./shop.html">VER TIENDA</a>
+          <ul class="navbar__menu">
+            <li class="navbar__item"> 
+              <a class="navbar__link" href="./shop.html">VER TIENDA</a>
             </li>
-            <li>
-              <a href="./admin.html">ADMIN</a>
+            <li class="navbar__item">
+              <a class="navbar__link" href="./admin.html">ADMIN</a>
             </li>
-            <li>
-              <a href="">SALIR</a>
+            <li class="navbar__item">
+              <a class="navbar__link" href="">SALIR</a>
             </li>
            </ul>
         </nav>  
        </header> 
           <main>
-            <div>
+            <div class="container">
             <form action="" method="" enctype="application/x-www-form-urlencoded">
               <label for="search">
-                <img src="img/icons/search_icon.svg" alt="Ícono search">
+                <img class="iconosearch" src="img/icons/search_icon.svg" alt="Ícono search">
               </label>
-              <input type="text" name="search" id="search" placeholder="código, nombre o categoria">
+              <input class="cajabusqueda" type="text" name="search" id="search" placeholder="código, nombre o categoria">
             </form>
            </div>
            <section>
-            <div class="Listado productos">
+            <div class="Listado__productos container">
             <h2>LISTADO DE PRODUCTOS</h2>
+            <div class="Agregarboton">
               <h3>AGREGAR</h3> 
               <button> 
                 <picture>
                   <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>
                 </picture>
               </button>
-            </div>
-            <table cellpadding="5" cellspacing="2">
+           </div> 
+          </div>
+            <table class="tabla container" cellpadding="5" cellspacing="2">
               <thead> 
                  <tr>
-                  <td>ID</td>
-                  <td>Código</td>
-                  <td>Nombre del producto</td>
-                  <td>Categoria</td>
+                  <td class="negrita">ID</td>
+                  <td class="negrita">Código</td>
+                  <td class="negrita">Nombre del producto</td>
+                  <td class="negrita">Categoria</td>
                  </tr>   
               </thead>
                 <tbody>
@@ -319,27 +322,27 @@
               </table>
            </section>   
           </main> 
-       <footer>
-        <section>
-          <ul>
-            <li>
-              <a href="./shop.html">SHOP</a>
+       <footer class="footer">
+        <section class="navbar container">
+          <ul class="navbar__item">
+            <li class="navbar__item">
+              <a class="navbar__link" href="./shop.html">SHOP</a>
             </li>
-            <li>
-              <a href="./registro.html">REGISTRARSE</a>
+            <li class="navbar__item">
+              <a class="navbar__link" href="./registro.html">REGISTRARSE</a>
             </li>
-            <li>
-              <a href="./login.html">LOGIN</a>
+            <li class="navbar__item">
+              <a class="navbar__link" href="./login.html">LOGIN</a>
             </li>
-            <li>
-              <a href="./contact.html">CONTACTO</a>
+            <li class="navbar__item">
+              <a class="navbar__link" href="./contact.html">CONTACTO</a>
             </li>
           </ul>
           <picture>
             <img src="./img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
           </picture>      
         </section>
-        <p>All right reserved 2023 - Funkoshop &copy;</p>
+        <p class="footer__copy">All right reserved 2023 - Funkoshop &copy;</p>
         </footer>  
 </body>
 </html>
