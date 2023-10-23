@@ -36,14 +36,45 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    }
+    position: relative;
+}
+.navbar:hover::before{
+    width: 70%;
+    opacity: 1;
+}
+.navbar:hover::after{
+    width: 40%;
+    opacity: 1;
+}
+
+.navbar::before{
+    content: "";
+    border-bottom: 2px solid white;
+    position: absolute;
+    bottom: -5px;
+    width: 90%;
+    right: 0;
+    opacity: 0;
+}
+
+.navbar::after{
+    content: "";
+    border-bottom: 2px solid white;
+    position: absolute;
+    bottom: -10px;
+    width: 60%;
+    left: 0;
+    transition: 0.2s;
+    opacity: 0;
+}
+
     
 .navbar__menu {
     display: flex;
     align-items: center;
     gap: 9px; 
     padding-right: 3px;
-    }
+}
 
 ul{
     list-style: none; 
@@ -197,31 +228,43 @@ div h1{
 
 button {
 	display: inline-block;
-	background-color: #d70b04;
-	padding:8px;
-	border:0;
+	padding:6px 10px;
+	border: 1px solid #7b7878;
+    text-decoration: none;
 	font-size: 1em; 
-	color: 	white;
-    
+	color: 	rgb(0, 0, 0);
+    transition: color .02s;
+    background-color: #d21711;
+    position: relative;
 }
+
+button::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: 0.2s;
+}
+button:hover{
+    color: rgb(255, 255, 255);
+}
+
 footer{ 
     display: block;
     padding-left: 15px;
     flex-direction: column;
     background-color: rgb(27, 27, 33);
     
-    }
+}
     
 .footer_footer{
     text-align: start;
     display: inline-block;
-
-    }
+    position: relative;
+}
 
 .footeruno{
     display: flex;
-    padding: 5px 160px 0px 5px;
-    max-width: 50%;
+    max-width: 50%; 
 }    
     
 footer p{
@@ -232,7 +275,8 @@ footer p{
 
 footer div:nth-child(2){
     align-self: center;
-    }
+
+}
 
 @media screen and (min-width:1832px){
 
