@@ -26,7 +26,7 @@ header{
     max-width:100%;
     font-size:10px;
     background-color: rgb(43, 43, 53);
-    padding: 25px;
+    padding: 30px;
 }
 .navbar{
     display: flex;
@@ -34,6 +34,7 @@ header{
     align-items: center; 
     gap: 3px;  
 }
+
     
 .navbarmenu{
     display:flex;
@@ -70,7 +71,7 @@ div{
 div h2{
     font-size: 20px;
     padding-top: 35px;
-    padding-bottom: 38px;
+    padding-bottom: 30px;
 }
 
 label{
@@ -122,12 +123,13 @@ input{
 }
 
 button {
-	display: inline-block;
-	background-color: #d70b04;
-	padding:10px;
-	border:0;
-	font-size: 1em; 
-	color: 	white;
+    display: inline-block;
+    background-color: #d70b04;
+    padding:10px;
+    border:0;
+    font-size: 1em; 
+    color: 	white;
+    font-size: 10px;
 }
 
 footer{ 
@@ -175,7 +177,7 @@ header {
     max-width:100%;
     background-color: rgb(43, 43, 53); 
     font-size: 25px;
-    padding: 10px;
+    padding: 18px;
 }
         
 a{
@@ -191,9 +193,39 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-            
+    position: relative;        
 }
-        
+
+.navbar::before{
+    content: "";
+    border-bottom: 2px solid white;
+    position: absolute;
+    bottom: -5px;
+    width: 90%;
+    right: 0;
+    opacity: 0;
+}
+
+.navbar::after{
+    content: "";
+    border-bottom: 2px solid white;
+    position: absolute;
+    bottom: -10px;
+    width: 60%;
+    left: 0;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.navbar:hover::before{
+    width: 70%;
+    opacity: 1;
+}
+.navbar:hover::after{
+    width: 40%;
+    opacity: 1;
+}
+     
 .navbarmenu {
     display: flex;
     align-items: center;
@@ -226,7 +258,7 @@ div{
 div h2{
     font-size: 30px;
     padding-top: 20px;
-    padding-bottom: 13px;
+    padding-bottom: 15px;
 }
    
 label{
@@ -289,17 +321,31 @@ input{
     text-decoration: none;
 }
    
+
 button {
-    display: inline-block;
-    background-color: #d70b04;
-    padding:10px;
-    border:0;
-    font-size: 1em; 
-    color: 	white;
-    font-size: 20px;
+	display: inline-block;
+	padding:6px 10px;
+	border: 1px solid #7b7878;
+    text-decoration: none;
+	font-size: 2em; 
+	color: 	rgb(0, 0, 0);
+    transition: color .0.2s;
+    background-color: #d21711;
+    position: relative;
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: 0.2s;
+}
+button:hover{
+    color: #ffffff;
 }
 
 footer{ 
+    width: 100%;
     display: block;
     flex-direction: column;
     padding-left: 200px;
@@ -316,7 +362,7 @@ footer{
 
 .footeruno{
     display: flex;
-    padding: 5px 175px 1.5px 100px;
+    padding: 5px 115px 0px 95px;
     max-width: 100%;
 } 
 
