@@ -178,7 +178,37 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-        
+    position: relative;    
+}
+
+.navbar::before{
+    content: "";
+    border-bottom: 2px solid white;
+    position: absolute;
+    bottom: -5px;
+    width: 90%;
+    right: 0;
+    opacity: 0;
+}
+
+.navbar::after{
+    content: "";
+    border-bottom: 2px solid white;
+    position: absolute;
+    bottom: -10px;
+    width: 60%;
+    left: 0;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.navbar:hover::before{
+    width: 70%;
+    opacity: 1;
+}
+.navbar:hover::after{
+    width: 40%;
+    opacity: 1;
 }
     
 .navbarmenu {
@@ -250,9 +280,41 @@ label{
 input{
     border: white;
     text-decoration:underline red solid;
-    text-align: center;
+    text-align: start;
+    
+}
+div.cuenta{
+    padding-bottom: 4px;
+}
+.cuenta label{
+    padding: 5px 100px 5px 70px;
 }
 
+.Register label{
+    padding: 0;
+}
+
+button {
+	display: inline-block;
+	padding:7px 5px;
+	border: 1px solid #7b7878;
+    text-decoration: none;
+	font-size: 15px; 
+	color: 	rgb(0, 0, 0);
+    transition: color .0.2s;
+    background-color: #d21711;
+    position: relative;
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: 0.2s;
+}
+button:hover{
+    color: #ffffff;
+}
 
 footer{ 
     display: block;
