@@ -317,7 +317,7 @@ div h2 {
     text-decoration:underline #cc0404 solid;
     font-size: 35px;
     padding-left: 300px;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 
 
@@ -408,7 +408,7 @@ div h1{
     font-size: 25px;
     padding-right: 300px;
     padding-top: 25px;
-    text-decoration: underline red solid;
+    text-decoration: underline #ff0b0b solid;
 }
 
 .resumen{
@@ -449,17 +449,17 @@ div span{
 
 .pagar{
     text-align: end;
-    padding-right: 555px;
+    padding-right: 305px;
     padding-top: 0;
     padding-bottom: 2px;
 }
 
 button {
 	display: inline-block;
-	padding:9px 6px;
+	padding:9px 235px;
 	border: 1px solid #7b7878;
     text-decoration: none;
-	font-size: 15px; 
+	font-size: 20px; 
 	color: 	rgb(0, 0, 0);
     transition: color .0.2s;
     background-color: #d21711;
@@ -479,21 +479,21 @@ button:hover{
 footer{ 
     display: block;
     flex-direction: column;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 0px;
+    padding-right: 0px;
     background-color: rgb(43, 43, 53);
 }
 
 .footer_footer{
     text-align: start;
-    padding: 15px 515px 15px 0px;
+    padding: 15px 1350px 15px 0px;
     display: inline-block;
     font-size: 20px;
 }
 
 .footeruno{
     display: flex;
-    padding: 6px 0px 5px 233px;
+    padding: 6px 0px 5px 85px;
     max-width: 100%;
 } 
 
