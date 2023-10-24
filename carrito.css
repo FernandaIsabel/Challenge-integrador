@@ -29,32 +29,22 @@ header{
     font-size:15px;
     background-color: rgb(43, 43, 53);
     align-items: start;
-    padding: 10px;
+    padding: 25px;
     }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    position: relative;
-    transition: 0.2s;
-    
+     
 }
-
-a.navbar:hover{
-    background-color: #b31a1a ;
-    opacity: 1;
-    padding: 8px;
-}
-
     
 .navbar__menu {
     display: flex;
     align-items: center;
     gap: 9px; 
     padding-right: 3px;
-    gap: var(--spacing-20);
-    
+       
 }
 
 ul{
@@ -206,7 +196,7 @@ div h1{
 .pagar{
     text-align: end;
     padding-right: 90px;
-    padding-bottom: 75px;
+    padding-bottom: 51px;
 } 
 
 button {
@@ -218,65 +208,30 @@ button {
 	color: 	rgb(0, 0, 0);
     transition: color .02s;
     background-color: #d21711;
-    position: relative;
-}
-
-button::before{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    transition: 0.2s;
-}
-button:hover{
-    color: rgb(255, 255, 255);
-}
-
-
-
-footer{ 
-    display: block;
-    padding-left: 15px;
-    flex-direction: column;
-    background-color: rgb(27, 27, 33);
     
 }
 
-footer.footer{
-    padding-left: 500px;
-    padding-right: 500px;
-}
+footer{ 
+    display: block;
+    padding-left: 17px;
+    flex-direction: column;
+    background-color: rgb(43, 43, 53);
+    
+    }
     
 .footer_footer{
     text-align: start;
     display: inline-block;
-    
-}
 
-picture.footeruno{
-    padding: 0;
-}
+    }
 
-div.footeruno{
-    padding: 0;
-}
-
-a.footeruno:hover{
-    background-color: #b31a1a ;
-    opacity: 1;
-    padding: 1px;
-    text-align: center;
-    
-}
-
-a.footeruno{
+.footeruno{
     display: flex;
-    position: relative;
-    transition: 0.2s;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 4px;
+    padding: 5px 160px 0px 5px;
+    max-width: 50%;
+
 }    
-    
+
 footer p{
     text-align: center;
     color: white;
@@ -313,15 +268,25 @@ header img {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;  
+    position: relative;
+    transition: 0.2s;
     
 }
 
+a.navbar:hover{
+    background-color: #b31a1a ;
+    opacity: 1;
+    padding: 8px;
+}
+
+    
 .navbar__menu {
     display: flex;
     align-items: center;
-    gap: 2em;
-    padding-right:80px;   
+    gap: 50px; 
+    padding: 20px 80px;
+       
 }
 
 nav svg{
@@ -393,7 +358,7 @@ div .funko{
     text-align: start;
     display: inline-block;
     font-size: 25px;
-    padding-right: 90px;
+    padding-right: 85px;
 }
 
 div div{
@@ -489,9 +454,26 @@ div span{
     padding-bottom: 2px;
 }
 
-button{
-    padding: 10px;
-    font-size: 15px;
+button {
+	display: inline-block;
+	padding:9px 6px;
+	border: 1px solid #7b7878;
+    text-decoration: none;
+	font-size: 15px; 
+	color: 	rgb(0, 0, 0);
+    transition: color .0.2s;
+    background-color: #d21711;
+    position: relative;
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: 0.2s;
+}
+button:hover{
+    color: #ffffff;
 }
 
 footer{ 
@@ -499,26 +481,35 @@ footer{
     flex-direction: column;
     padding-left: 200px;
     padding-right: 200px;
-    background-color:rgb(43, 43, 53);
+    background-color: rgb(43, 43, 53);
 }
 
 .footer_footer{
     text-align: start;
-    padding: 10px 515px 9px 0px;
+    padding: 15px 515px 15px 0px;
     display: inline-block;
     font-size: 20px;
 }
 
 .footeruno{
     display: flex;
-    padding: 5px 115px 0px 95px;
+    padding: 6px 0px 5px 233px;
     max-width: 100%;
 } 
+
+a.footeruno{
+    padding: 0;
+}
+
+a.footeruno:hover{
+    background-color: #b31a1a ;
+    opacity: 1;
+    padding: 6px;
+}
 
 footer p{
     font-size: 20px;
     text-align: center;
-    
 }
 
 }
