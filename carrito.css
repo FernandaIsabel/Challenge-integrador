@@ -408,7 +408,7 @@ div h1{
     font-size: 25px;
     padding-right: 300px;
     padding-top: 25px;
-    text-decoration: underline red solid;
+    text-decoration: underline #ff0b0b solid;
 }
 
 .resumen{
