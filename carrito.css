@@ -314,7 +314,7 @@ main article{
 }
 
 div h2 {
-    text-decoration:underline red solid;
+    text-decoration:underline #cc0404 solid;
     font-size: 35px;
     padding-left: 300px;
     padding-top: 25px;
@@ -504,7 +504,7 @@ a.footeruno{
 a.footeruno:hover{
     background-color: #b31a1a ;
     opacity: 1;
-    padding: 6px;
+    padding: 3px;
 }
 
 footer p{
