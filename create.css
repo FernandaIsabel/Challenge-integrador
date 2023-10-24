@@ -20,7 +20,7 @@ html {
 a{
     text-decoration: none;
     font-size: var(--font-medium);
-    color:blue;
+    color:#ffffff;
 }
 header{
     max-width:100%;
@@ -196,34 +196,10 @@ header img {
     position: relative;        
 }
 
-.navbar::before{
-    content: "";
-    border-bottom: 2px solid white;
-    position: absolute;
-    bottom: -5px;
-    width: 90%;
-    right: 0;
-    opacity: 0;
-}
-
-.navbar::after{
-    content: "";
-    border-bottom: 2px solid white;
-    position: absolute;
-    bottom: -10px;
-    width: 60%;
-    left: 0;
-    transition: 0.2s;
-    opacity: 0;
-}
-
-.navbar:hover::before{
-    width: 70%;
+a.navbar:hover{
+    background-color: #b31a1a ;
     opacity: 1;
-}
-.navbar:hover::after{
-    width: 40%;
-    opacity: 1;
+    padding: 8px;
 }
      
 .navbarmenu {
@@ -345,26 +321,35 @@ button:hover{
 }
 
 footer{ 
-    width: 100%;
     display: block;
     flex-direction: column;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 0px;
+    padding-right: 0px;
     background-color: rgb(43, 43, 53);
 }
 
 .footer_footer{
     text-align: start;
-    padding: 15px 575px 15px 0px;
+    padding: 15px 1350px 20px 0px;
     display: inline-block;
     font-size: 20px;
 }
 
 .footeruno{
     display: flex;
-    padding: 5px 115px 0px 95px;
+    padding: 6px 0px 9px 85px;
     max-width: 100%;
 } 
+
+a.footeruno{
+    padding: 0;
+}
+
+a.footeruno:hover{
+    background-color: #b31a1a ;
+    opacity: 1;
+    padding: 3px;
+}
 
 footer p{
     font-size: 20px;
