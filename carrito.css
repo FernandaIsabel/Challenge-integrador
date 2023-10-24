@@ -317,7 +317,7 @@ div h2 {
     text-decoration:underline #cc0404 solid;
     font-size: 35px;
     padding-left: 300px;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 
 
@@ -449,17 +449,17 @@ div span{
 
 .pagar{
     text-align: end;
-    padding-right: 395px;
+    padding-right: 305px;
     padding-top: 0;
     padding-bottom: 2px;
 }
 
 button {
 	display: inline-block;
-	padding:9px 155px;
+	padding:9px 235px;
 	border: 1px solid #7b7878;
     text-decoration: none;
-	font-size: 15px; 
+	font-size: 20px; 
 	color: 	rgb(0, 0, 0);
     transition: color .0.2s;
     background-color: #d21711;
