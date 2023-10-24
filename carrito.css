@@ -21,7 +21,7 @@ a{
     text-decoration: none;
     font-size: var(--font-medium);
     font-family: inherit;
-    color:blue;
+    color:rgb(255, 255, 255);
     }
 
 header{
@@ -37,35 +37,14 @@ header{
     justify-content: space-between;
     align-items: center;  
     position: relative;
-}
-.navbar:hover::before{
-    width: 70%;
-    opacity: 1;
-}
-.navbar:hover::after{
-    width: 40%;
-    opacity: 1;
-}
-
-.navbar::before{
-    content: "";
-    border-bottom: 2px solid white;
-    position: absolute;
-    bottom: -5px;
-    width: 90%;
-    right: 0;
-    opacity: 0;
-}
-
-.navbar::after{
-    content: "";
-    border-bottom: 2px solid white;
-    position: absolute;
-    bottom: -10px;
-    width: 60%;
-    left: 0;
     transition: 0.2s;
-    opacity: 0;
+    
+}
+
+a.navbar:hover{
+    background-color: #b31a1a ;
+    opacity: 1;
+    padding: 8px;
 }
 
     
@@ -74,10 +53,14 @@ header{
     align-items: center;
     gap: 9px; 
     padding-right: 3px;
+    gap: var(--spacing-20);
+    
 }
 
 ul{
     list-style: none; 
+    
+   
     }
     
 nav li{
@@ -248,6 +231,8 @@ button:hover{
     color: rgb(255, 255, 255);
 }
 
+
+
 footer{ 
     display: block;
     padding-left: 15px;
@@ -255,16 +240,41 @@ footer{
     background-color: rgb(27, 27, 33);
     
 }
+
+footer.footer{
+    padding-left: 500px;
+    padding-right: 500px;
+}
     
 .footer_footer{
     text-align: start;
     display: inline-block;
-    position: relative;
+    
 }
 
-.footeruno{
+picture.footeruno{
+    padding: 0;
+}
+
+div.footeruno{
+    padding: 0;
+}
+
+a.footeruno:hover{
+    background-color: #b31a1a ;
+    opacity: 1;
+    padding: 1px;
+    text-align: center;
+    
+}
+
+a.footeruno{
     display: flex;
-    max-width: 50%; 
+    position: relative;
+    transition: 0.2s;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 4px;
 }    
     
 footer p{
@@ -273,10 +283,6 @@ footer p{
     padding-top: 10px;
 }
 
-footer div:nth-child(2){
-    align-self: center;
-
-}
 
 @media screen and (min-width:1832px){
 
@@ -493,7 +499,7 @@ footer{
     flex-direction: column;
     padding-left: 200px;
     padding-right: 200px;
-    background-color: rgb(27, 27, 33);
+    background-color:rgb(43, 43, 53);
 }
 
 .footer_footer{
